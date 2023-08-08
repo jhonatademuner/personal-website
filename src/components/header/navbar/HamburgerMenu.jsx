@@ -17,12 +17,12 @@ function HamburgerMenu() {
       {!menu ? (
         <GiHamburgerMenu
           onClick={handleMenuClick}
-          className="text-3xl text-palette-300 transition-all duration-500 cursor-pointer animate__animated animate__zoomIn"
+          className="text-3xl text-palette-400 transition-all duration-500 cursor-pointer animate__animated animate__zoomIn"
         />
       ) : (
         <MdClose
           onClick={handleMenuClick}
-          className="text-3xl text-palette-300 transition-all duration-500 cursor-pointer animate__animated animate__zoomIn"
+          className="text-3xl text-palette-400 transition-all duration-500 cursor-pointer animate__animated animate__zoomIn"
         />
       )}
       <Dropdown status={menu} />
