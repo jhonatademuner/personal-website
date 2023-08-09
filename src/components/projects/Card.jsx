@@ -12,13 +12,13 @@ function Card({ image, title, subtitle, description, techs, repo, link }) {
               {subtitle}
             </h4>
           </div>
-          <p className="text-left">{description}</p>
-          <div className="flex flex-wrap gap-2">
+          <p className="text-left h-72">{description}</p>
+          <div className="flex flex-wrap gap-2 h-16">
             <p className="font-semibold text-lg">Techs: </p>
             {techs.map((tech, index) => (
               <span
                 key={index}
-                className="bg-palette-700 px-2 rounded-2xl flex items-center font-semibold"
+                className="bg-palette-700 px-2 rounded-2xl flex h-7 items-center font-semibold"
               >
                 {tech}
               </span>
