@@ -3,8 +3,10 @@ import Header from "./components/header/Header";
 import Introduction from "./components/Introduction";
 import ContactButton from "./components/ContactButton";
 import ProjectsButton from "./components/ProjectsButton";
+import Projects from "./components/projects/Projects";
 
 function App() {
+
   return (
     <>
       <Header mobile={window.innerWidth <= 415 || window.innerHeight <= 415} />
@@ -19,13 +21,35 @@ function App() {
           </div>
           <img
             src="./src/assets/photo.png"
-            alt="teste"
+            alt="My Photo"
             className="-z-10 w-full h-full object-contain"
           />
         </div>
       </section>
-      <section className="flex h-[45rem]">
-
+      <section className="flex flex-col items-center justify-around h-[49rem] bg-gradient-to-b from-palette-700 to-palette-100 fluid_content">
+        <img
+          src="./src/assets/about_me.svg"
+          alt="Draw of a guy sitting beside a computer"
+          className=" w-80 object-contain"
+        />
+        <h3 className="text-3xl text-palette-600 font-bold" id="aboutMe">
+          About Me
+        </h3>
+        <p className="text-palette-600 text-lg text-left font-semibold">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo pariatur
+          aut perferendis amet, optio in velit sequi quas libero ullam, odio,
+          obcaecati repellendus voluptas nesciunt! Atque deleniti veniam rerum
+          minus! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Commodi rem repellendus nulla magni. Asperiores, impedit. Veritatis ad
+          voluptatibus hic ab nam. Laudantium exercitationem ut laborum ratione
+          debitis sapiente adipisci numquam!
+        </p>
+      </section>
+      <section className="flex flex-col items-center pt-8 pb-12 gap-8 bg-palette-100 p-2">
+        <h3 className="text-3xl text-palette-600 font-bold" id="aboutMe">
+          Projects
+        </h3>
+        <Projects />
       </section>
     </>
   );
