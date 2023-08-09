@@ -1,14 +1,18 @@
 import "./App.css";
+
+
 import Header from "./components/header/Header";
 import Introduction from "./components/Introduction";
 import ContactButton from "./components/ContactButton";
 import ProjectsButton from "./components/ProjectsButton";
 import Projects from "./components/projects/Projects";
-import Photo from "/src/assets/photo.png"
-import AboutMeImg from "/src/assets/about_me.svg"
+import Form from "./components/Form";
+
+
+import Photo from "/src/assets/photo.png";
+import AboutMeImg from "/src/assets/about_me.svg";
 
 function App() {
-
   return (
     <>
       <Header mobile={window.innerWidth <= 415 || window.innerHeight <= 415} />
@@ -28,7 +32,7 @@ function App() {
           />
         </div>
       </section>
-      <section className="flex flex-col items-center justify-around h-[49rem] bg-gradient-to-b from-palette-700 to-palette-100 fluid_content">
+      <section className="flex flex-col items-center justify-around h-[49rem] bg-gradient-to-b from-palette-700 to-palette-200 fluid_content">
         <img
           src={AboutMeImg}
           alt="Draw of a guy sitting beside a computer"
@@ -47,11 +51,19 @@ function App() {
           debitis sapiente adipisci numquam!
         </p>
       </section>
-      <section className="flex flex-col items-center pt-8 pb-12 gap-8 bg-palette-100 p-2">
-        <h3 className="text-3xl text-palette-600 font-bold" id="aboutMe">
-          Projects
+      <section className="flex w-full bg-[url('./assets/wave-inverted.svg')] bg-contain bg-no-repeat bg-bottom pb-32">
+        <div className="flex flex-col items-center pt-8 pb-12 gap-8 bg-palette-200 p-2 -z-10">
+          <h3 className="text-3xl text-palette-600 font-bold" id="aboutMe">
+            Projects
+          </h3>
+          <Projects />
+        </div>
+      </section>
+      <section className="h-[45rem] w-full bg-palette-700 fluid_content">
+        <h3 className="text-3xl text-palette-600 font-bold text-center" id="aboutMe">
+          Contact Me
         </h3>
-        <Projects />
+        <Form />
       </section>
     </>
   );

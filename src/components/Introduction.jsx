@@ -5,10 +5,10 @@ function Introduction() {
     <>
       <div>
         <h1 className="text-md font-bold text-center">Hello, I&apos;m</h1>
-        <p className="text-4xl font-bold">
+        <p className="text-4xl font-bold text-center">
           <span className="text-palette-700">Jhonata</span> Polito
         </p>
-        <h2 className="text-md">
+        <h2 className="text-md text-center">
           I&apos;m a <Roles />
         </h2>
       </div>
