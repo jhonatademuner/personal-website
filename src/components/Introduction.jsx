@@ -4,7 +4,7 @@ function Introduction() {
   return (
     <>
       <div>
-        <h1 className="text-md font-bold">Hello, I&apos;m</h1>
+        <h1 className="text-md font-bold text-center">Hello, I&apos;m</h1>
         <p className="text-4xl font-bold">
           <span className="text-palette-700">Jhonata</span> Polito
         </p>
