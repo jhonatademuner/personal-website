@@ -4,6 +4,8 @@ import Introduction from "./components/Introduction";
 import ContactButton from "./components/ContactButton";
 import ProjectsButton from "./components/ProjectsButton";
 import Projects from "./components/projects/Projects";
+import Photo from "/src/assets/photo.png"
+import AboutMeImg from "/src/assets/about_me.svg"
 
 function App() {
 
@@ -20,7 +22,7 @@ function App() {
             </div>
           </div>
           <img
-            src="./src/assets/photo.png"
+            src={Photo}
             alt="My Photo"
             className="-z-10 w-full h-full object-contain"
           />
@@ -28,7 +30,7 @@ function App() {
       </section>
       <section className="flex flex-col items-center justify-around h-[49rem] bg-gradient-to-b from-palette-700 to-palette-100 fluid_content">
         <img
-          src="./src/assets/about_me.svg"
+          src={AboutMeImg}
           alt="Draw of a guy sitting beside a computer"
           className=" w-80 object-contain"
         />
