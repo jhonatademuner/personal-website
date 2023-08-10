@@ -1,6 +1,6 @@
 import Card from "./Card";
-import SortComparisonImg from "/src/assets/sort_comparison.png"
-import LocalifImg from "/src/assets/localif.png"
+import SortComparisonImg from "/src/assets/sort_comparison.png";
+import LocalifImg from "/src/assets/localif.png";
 
 function Projects() {
   return (

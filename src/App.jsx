@@ -72,7 +72,10 @@ function App() {
           </section>
           <section className="flex w-full pb-32 relative" id="projects">
             <div className="flex flex-col items-center pt-8 pb-12 gap-8 bg-gradient-to-b from-palette-100 to-palette-200 p-2">
-              <h3 className="text-3xl text-palette-600 font-bold m-4" id="aboutMe">
+              <h3
+                className="text-3xl text-palette-600 font-bold m-4"
+                id="aboutMe"
+              >
                 Projects
               </h3>
               <Projects />
