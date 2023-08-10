@@ -25,14 +25,17 @@ function Card({ image, title, subtitle, description, techs, repo, link }) {
             ))}
           </div>
           <div className="flex gap-4">
-            <a
-              href={repo}
-              target="_blank"
-              rel="noreferrer"
-              className="flex justify-center items-center border-2 border-palette-700 py-1 px-2 rounded-xl text-palette-700 font-semibold hover:bg-palette-700 hover:text-palette-100"
-            >
-              Source Code
-            </a>
+            {repo && (
+              <a
+                href={repo}
+                target="_blank"
+                rel="noreferrer"
+                className="flex justify-center items-center border-2 border-palette-700 py-1 px-2 rounded-xl text-palette-700 font-semibold hover:bg-palette-700 hover:text-palette-100"
+              >
+                Source Code
+              </a>
+            )}
+
             {link && (
               <a
                 href={link}
@@ -56,8 +59,8 @@ Card.propTypes = {
   subtitle: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   techs: PropTypes.array.isRequired,
-  repo: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
+  repo: PropTypes.string,
+  link: PropTypes.string,
 };
 
 export default Card;
