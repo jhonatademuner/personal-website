@@ -4,7 +4,7 @@ function Roles() {
   return (
     <>
       <ReactTyped className="text-palette-900 font-bold text-2xl"
-          strings={["Software Engineer", "Full-Stack Developer", "Mobile Developer"]}
+          strings={["Software Developer", "Full-Stack Developer", "Mobile Developer"]}
           typeSpeed={120}
           loop
           backSpeed={20}
