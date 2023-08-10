@@ -46,28 +46,33 @@ function App() {
             className="flex flex-col items-center justify-around h-[49rem] bg-palette-700 fluid_content"
             id="aboutMe"
           >
-            <img
-              src={AboutMeImg}
-              alt="Draw of a guy sitting beside a computer"
-              className=" w-80 object-contain"
-            />
             <h3 className="text-3xl text-palette-600 font-bold" id="aboutMe">
               About Me
             </h3>
-            <p className="text-palette-600 text-lg text-left font-semibold">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
-              pariatur aut perferendis amet, optio in velit sequi quas libero
-              ullam, odio, obcaecati repellendus voluptas nesciunt! Atque
-              deleniti veniam rerum minus! Lorem ipsum dolor, sit amet
-              consectetur adipisicing elit. Commodi rem repellendus nulla magni.
-              Asperiores, impedit. Veritatis ad voluptatibus hic ab nam.
-              Laudantium exercitationem ut laborum ratione debitis sapiente
-              adipisci numquam!
+            <img
+              src={AboutMeImg}
+              alt="Draw of a guy sitting beside a computer"
+              className=" w-60 object-contain"
+            />
+            <p className="text-palette-600 text-left font-semibold">
+              Back in 2021, I started my journey in the world of programming
+              after a sudden interest in how websites were made. I started
+              learning HTML, CSS, and JavaScript, I was amazed by how much you
+              could do with just a few lines of code.
+              <br />
+              Since then, I&apos;ve been learning new technologies and improving
+              my skills. I&apos;m currently coursing Information Systems at the
+              Federal Institute of Espírito Santo.
+              <br />
+              Nowadays, i trying to expose myself to new challenges and
+              technologies, and I&apos;m always looking for new opportunities to
+              learn and grow. In my free time, I often play some games, listen
+              to music and watch some videos of new technologies.
             </p>
           </section>
           <section className="flex w-full pb-32 relative" id="projects">
             <div className="flex flex-col items-center pt-8 pb-12 gap-8 bg-gradient-to-b from-palette-100 to-palette-200 p-2">
-              <h3 className="text-3xl text-palette-600 font-bold" id="aboutMe">
+              <h3 className="text-3xl text-palette-600 font-bold m-4" id="aboutMe">
                 Projects
               </h3>
               <Projects />
