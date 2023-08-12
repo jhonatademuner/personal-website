@@ -1,7 +1,7 @@
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
-import Logo from "../header/Logo";
-import BackToTopButton from "../../BackToTopButton";
+import Logo from "./header/Logo";
+import BackToTopButton from "../BackToTopButton";
 
 function Footer() {
   return (
@@ -9,7 +9,7 @@ function Footer() {
       <Logo />
       <div className="flex gap-8 text-2xl mb-4">
         <a
-          href="https://www.linkedin.com/in/jhonata-polito/"
+          href="https://www.linkedin.com/in/jhonatapolito/"
           target="_blank"
           rel="noreferrer"
         >

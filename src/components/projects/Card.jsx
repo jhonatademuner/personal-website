@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 function Card({ image, title, subtitle, description, techs, repo, link }) {
   return (
     <>
-      <div className="flex flex-col bg-palette-100 border-2 border-palette-300 shadow-palette-300 shadow-md rounded-md overflow-hidden w-[23rem]">
-        <img src={image} alt={title} className="w-full h-52 object-cover" />
+      <div className="flex flex-col bg-palette-100 border-2 border-palette-300 shadow-palette-300 shadow-md rounded-md overflow-hidden w-[23rem] 2xl:max-w-[400px]">
+        <img src={image} alt={title} className="w-full h-52 object-cover xl:h-64" />
         <div className="flex flex-col p-6 gap-4">
           <div>
             <h3 className="text-xl font-bold text-left">{title}</h3>
@@ -12,7 +12,7 @@ function Card({ image, title, subtitle, description, techs, repo, link }) {
               {subtitle}
             </h4>
           </div>
-          <p className="text-left h-72">{description}</p>
+          <p className="text-left h-[19rem]">{description}</p>
           <div className="flex flex-wrap gap-2 h-16">
             <p className="font-semibold text-lg">Techs: </p>
             {techs.map((tech, index) => (

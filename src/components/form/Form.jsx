@@ -32,34 +32,36 @@ function Form() {
   return (
     <>
       <form
-        className="flex flex-col gap-4 py-8"
+        className="flex flex-col w-full items-center gap-4"
         onSubmit={(e) => {
           sendEmail(e);
         }}
       >
-        <input
-          type="text"
-          placeholder="Name*"
-          name="from_name"
-          className="bg-palette-600 border-2 border-palette-500 h-12 rounded-md p-2 text-palette-100 font-semibold outline-none focus:bg-palette-500 focus:border-palette-600"
-          onChange={(e) => setName(e.target.value)}
-          value={name}
-        />
-        <input
-          type="email"
-          placeholder="Email*"
-          name="email"
-          className="bg-palette-600 border-2 border-palette-500 h-12 rounded-md p-2 text-palette-100 font-semibold outline-none focus:bg-palette-500 focus:border-palette-600"
-          onChange={(e) => setEmail(e.target.value)}
-          value={email}
-        />
-        <textarea
-          placeholder="Type your message here*"
-          name="message"
-          className="bg-palette-600 border-2 border-palette-500 h-48 rounded-md p-2 text-palette-100 font-semibold outline-none focus:bg-palette-500 focus:border-palette-600"
-          onChange={(e) => setMessage(e.target.value)}
-          value={message}
-        ></textarea>
+        <div className="flex flex-col gap-4 w-full max-w-[600px] md:w-4/5">
+          <input
+            type="text"
+            placeholder="Name*"
+            name="from_name"
+            className="bg-palette-600 border-2 border-palette-500 h-12 rounded-md p-2 text-palette-100 font-semibold outline-none focus:bg-palette-500 focus:border-palette-600"
+            onChange={(e) => setName(e.target.value)}
+            value={name}
+          />
+          <input
+            type="email"
+            placeholder="Email*"
+            name="email"
+            className="bg-palette-600 border-2 border-palette-500 h-12 rounded-md p-2 text-palette-100 font-semibold outline-none focus:bg-palette-500 focus:border-palette-600"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+          />
+          <textarea
+            placeholder="Type your message here*"
+            name="message"
+            className="bg-palette-600 border-2 border-palette-500 h-48 rounded-md p-2 text-palette-100 font-semibold outline-none focus:bg-palette-500 focus:border-palette-600"
+            onChange={(e) => setMessage(e.target.value)}
+            value={message}
+          ></textarea>
+        </div>
         <SendButton />
       </form>
     </>

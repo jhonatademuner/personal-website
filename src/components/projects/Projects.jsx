@@ -5,7 +5,7 @@ import LocalifImg from "/src/assets/localif.png";
 function Projects() {
   return (
     <>
-      <div className="flex flex-wrap items-center justify-center gap-8">
+      <div className="flex flex-wrap items-center w-full gap-8 lg:gap-16 xl:gap-28 justify-center max-w-[1440px]">
         <Card
           image={SortComparisonImg}
           title="Sort Comparison"
@@ -14,6 +14,22 @@ function Projects() {
           techs={["HTML", "CSS", "JavaScript"]}
           repo="https://github.com/jhonataplt/sort-comparison"
           link="https://jhonataplt.github.io/sort-comparison/"
+        />
+        <Card
+          image={LocalifImg}
+          title="Localif"
+          subtitle="Mobile Application"
+          description="LocalIf ​​is an image recognition application specifically designed for IFES Campus Serra. With a comprehensive database, the program stores information about the various locations in the campus. Using two feature extractors, LocalIf ​​analyzes the photos sent by the user and determines the corresponding location. Its also have a pathfinder feature, which allows the user to find the shortest path between two locations."
+          techs={[
+            "Kotlin",
+            "Java",
+            "Android Studio",
+            "C",
+            "C++",
+            "Python",
+            "CMake",
+          ]}
+          repo="https://github.com/jhonataplt/localif"
         />
         <Card
           image={LocalifImg}
