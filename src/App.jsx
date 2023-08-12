@@ -8,26 +8,22 @@ import Projects from "./components/projects/Projects";
 import Form from "./components/form/Form";
 import Footer from "./components/layout/Footer";
 
-import Photo from "/src/assets/photo.png";
+// import Photo from "/src/assets/photo.png";
 import AboutMeImg from "/src/assets/about_me.svg";
 
 function App() {
   return (
     <>
       <Header />
-      <section className="fluid_content relative flex flex-col justify-between items-center bg-gradient-to-b from-palette-100 to-palette-800 h-[calc(100vh-4rem)] w-full lg:flex-row">
-        <div className="flex flex-col items-center gap-12 py-4 lg:px-32">
+      <section className="fluid_content relative flex flex-col justify-between items-center bg-gradient-to-b from-palette-100 to-palette-800 h-[calc(100vh-4rem)] w-full lg:flex-row lg:items-end lg:justify-around">
+        <div className="flex flex-col items-center gap-12 h-1/2 justify-center lg:w-1/2 lg:h-full">
           <Introduction />
           <div className="flex justify-center gap-4">
             <ContactButton />
             <ProjectsButton />
           </div>
         </div>
-        <img
-          src={Photo}
-          alt="My Photo"
-          className=" h-max object-contain bottom-0 absolute lg:right-0 lg:h-[36rem] xl:right-32 "
-        />
+        <div className="h-1/2 flex justify-center relative w-full lg:h-4/5 lg:w-1/2 bg-[url('/src/assets/photo.png')] bg-no-repeat bg-bottom bg-contain"></div>
         <div className="absolute w-full h-32 -bottom-1 left-0 bg-[url('/src/assets/wave.svg')] bg-repeat-x"></div>
       </section>
       <section
@@ -60,18 +56,14 @@ function App() {
           </p>
         </div>
       </section>
-      <section
-        className="flex flex-col items-center w-full relative bg-gradient-to-b from-palette-100 to-palette-200 gap-16 pb-44"
-      >
+      <section className="flex flex-col items-center w-full relative bg-gradient-to-b from-palette-100 to-palette-200 gap-16 pb-44">
         <h3 className="text-3xl text-palette-600 font-bold mt-16" id="projects">
           Projects
         </h3>
         <Projects />
         <div className="absolute w-full h-32 -bottom-1 left-0 bg-[url('/src/assets/wave.svg')] bg-repeat-x"></div>
       </section>
-      <section
-        className=" w-full bg-palette-700 fluid_content flex flex-col items-center gap-16"
-      >
+      <section className=" w-full bg-palette-700 fluid_content flex flex-col items-center gap-16">
         <h3
           className="text-3xl text-palette-600 font-bold text-center"
           id="contact"
