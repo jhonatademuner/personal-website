@@ -4,7 +4,7 @@ function Card({ image, title, subtitle, description, techs, repo, link }) {
   return (
     <>
       <div className="flex flex-col bg-palette-100 border-2 border-palette-300 shadow-palette-300 shadow-md rounded-md overflow-hidden w-[23rem] 2xl:max-w-[400px]">
-        <img src={image} alt={title} className="w-full h-52 object-cover xl:h-64" />
+        <img src={image} alt={title} className="w-full h-52 object-cover" />
         <div className="flex flex-col p-6 gap-4">
           <div>
             <h3 className="text-xl font-bold text-left">{title}</h3>
