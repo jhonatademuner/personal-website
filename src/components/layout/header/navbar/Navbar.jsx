@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
-import HamburgerMenu from "./HamburgerMenu";
-
+import Dropdown from "./Dropdown";
 import { useState, useEffect } from "react";
 
 function Navbar() {
   const [screen, setScreen] = useState(false);
+  const [dropdownVisible, setDropdownVisible] = useState(false);
 
   const handleResize = () => {
     if (window.innerWidth <= 768) {
@@ -12,6 +12,10 @@ function Navbar() {
     } else {
       setScreen(false);
     }
+  };
+
+  const closeDropdown = () => {
+    setDropdownVisible(false);
   };
 
   useEffect(() => {
@@ -26,24 +30,26 @@ function Navbar() {
     };
   }, []);
 
-  return screen ? (
+  return (
     <div>
-      <HamburgerMenu />
+      {screen ? (
+        <Dropdown status={dropdownVisible} onClose={closeDropdown} />
+      ) : (
+        <nav className="bg-palette-100">
+          <ul className="text-palette-600 font-semibold flex items-center gap-8">
+            <a href="#aboutMe">
+              <li className="whitespace-nowrap">About me</li>
+            </a>
+            <a href="#projects">
+              <li>Projects</li>
+            </a>
+            <a href="#contact">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </nav>
+      )}
     </div>
-  ) : (
-    <nav className="bg-palette-100">
-      <ul className="text-palette-600 font-semibold flex items-center gap-8">
-        <a href="#aboutMe">
-          <li className="whitespace-nowrap">About me</li>
-        </a>
-        <a href="#projects">
-          <li>Projects</li>
-        </a>
-        <a href="#contact">
-          <li>Contact</li>
-        </a>
-      </ul>
-    </nav>
   );
 }
 
