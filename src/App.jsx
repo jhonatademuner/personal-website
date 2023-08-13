@@ -1,5 +1,4 @@
 import "./App.css";
-
 import Header from "./components/layout/header/Header";
 import Introduction from "./components/Introduction";
 import ContactButton from "./components/ContactButton";
@@ -7,8 +6,6 @@ import ProjectsButton from "./components/ProjectsButton";
 import Projects from "./components/projects/Projects";
 import Form from "./components/form/Form";
 import Footer from "./components/layout/Footer";
-
-// import Photo from "/src/assets/photo.png";
 import AboutMeImg from "/src/assets/about_me.svg";
 
 function App() {
@@ -39,20 +36,20 @@ function App() {
             alt="Draw of a guy sitting beside a computer"
             className=" h-1/2 max-h-96 object-contain lg:w-1/2 lg:h-auto"
           />
-          <p className="text-palette-600 text-left font-semibold md:w-4/5 lg:w-1/2">
+          <p className="text-palette-600 text-left font-semibold md:w-4/5 lg:w-1/2 lg:text-lg">
             Back in 2021, I started my journey in the world of programming after
             a sudden interest in how websites were made. I started learning
-            HTML, CSS, and JavaScript, I was amazed by how much you could do
+            HTML, CSS, and was amazed by how much you could do
             with just a few lines of code.
             <br />
-            Since then, I&apos;ve been learning new technologies and improving
-            my skills. I&apos;m currently coursing Information Systems at the
+            Since then, I&apos;ve been discovering new technologies and improving
+            my skills. I&apos;m currently pursuing a Bachelor&apos;s Degree in Information Systems by the
             Federal Institute of Espírito Santo.
             <br />
-            Nowadays, i trying to expose myself to new challenges and
-            technologies, and I&apos;m always looking for new opportunities to
+            Nowadays, I&apos;m trying to expose myself to new challenges and
+            technologies, and always looking for new opportunities to
             learn and grow. In my free time, I often play some games, listen to
-            music and watch some videos of new technologies.
+            music, and watch tech related videos.
           </p>
         </div>
       </section>
@@ -63,7 +60,7 @@ function App() {
         <Projects />
         <div className="absolute w-full h-32 -bottom-1 left-0 bg-[url('/src/assets/wave.svg')] bg-repeat-x"></div>
       </section>
-      <section className=" w-full bg-palette-700 fluid_content flex flex-col items-center gap-16">
+      <section className=" w-full bg-palette-700 fluid_content flex flex-col items-center gap-16 p-16">
         <h3
           className="text-3xl text-palette-600 font-bold text-center"
           id="contact"
