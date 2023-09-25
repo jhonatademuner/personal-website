@@ -2,9 +2,8 @@ import Image from "next/image";
 
 import Logo from "@/public/logo.svg";
 import Navbar from "@/components/layout/Navbar";
-import Hero from "@/components/Hero";
-import PostCard from "@/components/PostCard";
-import Subscription from "@/components/Subscription";
+import WorkSetupCard from "@/components/WorkSetupCard";
+import PersonalSetupCard from "@/components/PersonalSetupCard";
 import Footer from "@/components/layout/Footer";
 
 export default function Home() {
@@ -20,14 +19,10 @@ export default function Home() {
             className="absolute top-8 left-4"
           />
         </a>
-        <Hero />
-        <div className="flex justify-between w-full my-16">
-          <div className="flex flex-col h-full w-[40rem] shrink-0 pr-6 gap-8">
-            
-          </div>
-          <div className="flex">
-            <Subscription />
-          </div>
+        <h1 className="text-4xl text-text mx-auto mb-8 font-semibold">Meu <span className="text-accent">Setup</span></h1>
+        <div className="flex justify-evenly w-full flex-wrap gap-8">
+          <WorkSetupCard />
+          <PersonalSetupCard />
         </div>
       </section>
       <Footer />

@@ -2,10 +2,6 @@ import Image from "next/image";
 
 import Logo from "@/public/logo.svg";
 import Navbar from "@/components/layout/Navbar";
-import Hero from "@/components/Hero";
-import PostCard from "@/components/PostCard";
-import Subscription from "@/components/Subscription";
-import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
@@ -20,17 +16,11 @@ export default function Home() {
             className="absolute top-8 left-4"
           />
         </a>
-        <Hero />
-        <div className="flex justify-between w-full my-16">
-          <div className="flex flex-col h-full w-[40rem] shrink-0 pr-6 gap-8">
-            
-          </div>
-          <div className="flex">
-            <Subscription />
-          </div>
+        <div className="flex flex-col justify-center items-center h-[40rem] w-full gap-4">
+          <p className="text-6xl text-text font-bold">BLOG</p>
+          <p className="text-4xl text-accent font-bold">NOTHING HERE, COME BACK LATER...</p>
         </div>
       </section>
-      <Footer />
     </main>
   );
 }
