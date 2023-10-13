@@ -16,10 +16,10 @@ export default function Home() {
   return (
     <main className="flex flex-col min-w-full">
       <Navbar />
-      <section className="flex flex-col min-h-screen pt-52 mx-auto xl:w-[1024px] relative">
-        <div className="flex justify-center flex-1 gap-8">
-          <div className="w-[23rem] flex flex-col shrink-0 gap-4">
-            <Image src={Photo} alt="Photo" width={368} className="rounded-xl shadow-[0_6px_15px_rgba(100,100,197,0.1)]" />
+      <section className="flex flex-col min-h-screen pt-52 px-2 mx-auto xl:w-[1024px] relative">
+        <div className="flex flex-col items-center lg:items-start lg:flex-row justify-center gap-8">
+          <div className="w-[23rem] flex flex-col gap-4">
+            <Image src={Photo} alt="Photo" width={360} className="rounded-xl shadow-[0_6px_15px_rgba(100,100,197,0.1)] min-w-[360px]" />
             <div className="h-0.5 w-full rounded-sm bg-secondary"></div>
             <p className="text-primary">
               Olá, meu nome é{" "}
@@ -71,7 +71,7 @@ export default function Home() {
             </div>
           </div>
           <p className="text-justify text-text">
-            <span className="text-4xl font-bold">
+            <span className="text-2xl lg:text-4xl font-bold">
               Um pouco sobre mim <strong className="text-accent font-medium">!</strong>
             </span>
             <br />

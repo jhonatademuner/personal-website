@@ -9,14 +9,14 @@ import {
 function Hero() {
   return (
     <div className="pl-4">
-      <h1 className="text-4xl font-bold text-text">
+      <h1 className="lg:text-4xl text-2xl font-bold text-text">
         Android Developer,
         <br />
         Full-Stack Developer e
         <br />
         entusiasta de Tecnologia.
       </h1>
-      <div className="text-primary max-w-2xl mt-4 gap-2">
+      <div className="text-primary max-w-[95vw] md:max-w-[65vw] lg:max-w-[60vw] mt-4">
         <p>
           Olá, sou Jhonata Demuner, um Desenvolvedor Full-Stack e Desenvolvedor
           Android. Neste espaço, você encontrará informações sobre mim, meus
