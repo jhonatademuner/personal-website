@@ -8,7 +8,6 @@ import {
   AiFillMail,
 } from "react-icons/ai";
 
-import Logo from "@/public/logo.svg";
 import Photo from "@/public/images/photo.jpeg";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -18,14 +17,6 @@ export default function Home() {
     <main className="flex flex-col min-w-full">
       <Navbar />
       <section className="flex flex-col min-h-screen pt-52 mx-auto xl:w-[1024px] relative">
-        <a href="/">
-          <Image
-            src={Logo}
-            alt="Logo"
-            width={48}
-            className="absolute top-8 left-4"
-          />
-        </a>
         <div className="flex justify-center flex-1 gap-8">
           <div className="w-[23rem] flex flex-col shrink-0 gap-4">
             <Image src={Photo} alt="Photo" width={368} className="rounded-xl shadow-[0_6px_15px_rgba(100,100,197,0.1)]" />

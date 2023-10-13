@@ -1,8 +1,6 @@
-import Image from "next/image";
 import Localif from "@/public/images/localif.png";
 import SortComparison from "@/public/images/sort-comparison.png";
 
-import Logo from "@/public/logo.svg";
 import Navbar from "@/components/layout/Navbar";
 import WorkCard from "@/components/WorkCard";
 import Footer from "@/components/layout/Footer";
@@ -12,18 +10,9 @@ export default function Home() {
     <main className="flex flex-col min-w-full">
       <Navbar />
       <section className="flex flex-col min-h-screen pt-52 mx-auto xl:w-[1024px] relative">
-        <a href="/">
-          <Image
-            src={Logo}
-            alt="Logo"
-            width={48}
-            className="absolute top-8 left-4"
-          />
-        </a>
         <div className="flex justify-evenly w-full flex-wrap gap-16">
           <WorkCard
             isAndroid={true}
-            isWeb={true}
             img={Localif}
             title={"Localif"}
             subtitle={" App Android de Reconhecimento de Imagens"}
