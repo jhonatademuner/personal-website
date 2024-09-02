@@ -11,7 +11,7 @@ const projects: Project[] = [
     title: "Localif",
     subtitle: "Image Recognition Native Mobile App",
     description:
-      "LocalIf ​​is an image recognition application specifically designed for IFES Campus Serra. With a comprehensive database, the program stores information about the various locations in the campus. Using two feature extractors, LocalIf ​​analyzes the photos sent by the user and determines the corresponding location. It also contains a pathfinder feature, which allows the user to find the shortest path between two locations.",
+      "Localif ​​is an image recognition application specifically designed for IFES Campus Serra. With a comprehensive database, the program stores information about the various locations in the campus. Using two feature extractors, LocalIf ​​analyzes the photos sent by the user and determines the corresponding location. It also contains a pathfinder feature, which allows the user to find the shortest path between two locations.",
     skillsUsed: ["kotlin", "android", "java", "python", "c", "c-plus"],
     repoUrl: "https://github.com/jhonatademuner/localif",
     liveUrl: "",
@@ -47,20 +47,6 @@ const projects: Project[] = [
 ];
 
 const ProjectList: React.FC = () => {
-  // const [projects, setProjects] = useState<Project[]>([]);
-
-  // useEffect(() => {
-  //   const fetchProjects = async () => {
-  //     try {
-  //       const response = await axios.get<Project[]>("/api/projects");
-  //       setProjects(response.data);
-  //     } catch (error) {
-  //       console.error("Error fetching projects", error);
-  //     }
-  //   };
-
-  //   fetchProjects();
-  // }, []);
 
   return (
     <div className="flex flex-col">
