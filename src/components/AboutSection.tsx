@@ -57,8 +57,8 @@ const AboutSection = () => {
         </p>
         <div className="flex items-center justify-center h-fit w-fit flex-shrink-0">
           <Image
-            // src={Photo}
-            src=""
+            src={Photo}
+            // src=""
             alt="Jhonata Demuner's Photo"
             width={384}
             height={512}
