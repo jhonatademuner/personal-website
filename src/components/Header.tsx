@@ -12,7 +12,7 @@ const Header = () => {
         <a href="/">
           <div className="flex items-center gap-2 border-2 border-background-2 rounded-full py-2 px-4">
             <div className="bg-accent w-5 h-5 rounded-full"></div>
-            <h1 className=" text-text">Jhonata Demuner</h1>
+            <h1 className="text-text">Jhonata Demuner</h1>
           </div>
         </a>
         <nav>
@@ -41,10 +41,15 @@ const Header = () => {
             </a>
           </ul>
         </nav>
-        <div className="flex items-center gap-2 border-2 border-background-2 rounded-full py-2 px-4 text-text  cursor-pointer">
-          <FaRegFileAlt />
-          <p>My Resume</p>
-        </div>
+        <a
+          href="./jhonata_cv_en.pdf" // Path to your CV file
+          download="jhonata_cv_en.pdf" // Name of the downloaded file
+        >
+          <div className="flex items-center gap-2 border-2 border-background-2 rounded-full py-2 px-4 text-text cursor-pointer">
+            <FaRegFileAlt />
+            <p>My Resume</p>
+          </div>
+        </a>
       </div>
       <div className="w-full h-0.5 bg-background-2"></div>
     </header>
