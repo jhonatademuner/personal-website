@@ -27,7 +27,7 @@ const projects: Project[] = [
     description:
       "Komunicatte is an Messaging Web App designed for communication and interaction among users. The system allows users to create accounts, profiles, engage in conversations, send messages, react to messages, make calls, create communities, add friends, and more. Notifications are sent when messages are received, and users can participate in conversations within communities.",
     skillsUsed: ["nodejs", "express", "mongodb", "react", "typescript", "nextjs", "tailwind"],
-    repoUrl: "https://github.com/samoleu/samuzap",
+    repoUrl: "https://github.com/samoleu/komunicatte",
     liveUrl: "",
     downloadUrl: "",
     order: 2,
