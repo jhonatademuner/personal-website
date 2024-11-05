@@ -52,19 +52,27 @@ export default function Home() {
             </p>
           </div>
           <div className="flex gap-4 z-10">
-            <button className="btn btn-circle btn-outline border-text-100 text-text-100 hover:bg-text-100 hover:scale-110 transition-colors duration-300">
-              <IoLogoGithub className="text-2xl " />
-            </button>
-            <button className="btn btn-circle btn-outline border-text-100 text-text-100 hover:bg-text-100 hover:scale-110 transition-colors duration-300">
-              <IoLogoLinkedin className="text-2xl " />
-            </button>
-            <button className="btn btn-circle btn-outline border-text-100 text-text-100 hover:bg-text-100 hover:scale-110 transition-colors duration-300">
-              <IoMailSharp className="text-2xl " />
-            </button>
-            <button className="btn rounded-full btn-outline text-lg font-medium border-text-100 text-text-950 bg-white hover:bg-transparent hover:text-text-100 hover:scale-110 transition-colors duration-300">
-              <LuDownload className="text-2xl " />
-              Download CV
-            </button>
+            <a href="https://github.com/jhonatademuner" target="_blank">
+              <button className="btn btn-circle btn-outline border-text-100 text-text-100 hover:bg-text-100 hover:scale-110 transition-colors duration-300">
+                <IoLogoGithub className="text-2xl " />
+              </button>
+            </a>
+            <a href="https://www.linkedin.com/in/jhonatademuner/" target="_blank">
+              <button className="btn btn-circle btn-outline border-text-100 text-text-100 hover:bg-text-100 hover:scale-110 transition-colors duration-300">
+                <IoLogoLinkedin className="text-2xl " />
+              </button>
+            </a>
+            <a href="mailto:jhonata.demuner@gmail.com" target="_blank">
+              <button className="btn btn-circle btn-outline border-text-100 text-text-100 hover:bg-text-100 hover:scale-110 transition-colors duration-300">
+                <IoMailSharp className="text-2xl " />
+              </button>
+            </a>
+            <a href="/jhonata_cv_en.pdf" download="jhonata_cv_en.pdf">
+              <button className="btn rounded-full btn-outline text-lg font-medium border-text-100 text-text-950 bg-white hover:bg-transparent hover:text-text-100 hover:scale-110 transition-colors duration-300">
+                <LuDownload className="text-2xl " />
+                Download CV
+              </button>
+            </a>
           </div>
         </section>
         <div className="flex flex-col w-full items-center gap-16">
