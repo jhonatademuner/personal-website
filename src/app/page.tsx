@@ -42,10 +42,10 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col relative items-center gap-4 text-center">
-            <div className=" bg-accent-400 w-[48rem] h-32 blur-[12rem] opacity-80 absolute"></div>
+            <div className=" bg-accent-400 w-4/5 h-32 blur-[12rem] opacity-50 absolute"></div>
             <p className=" md:text-7xl text-4xl font-semibold text-center z-10 xl:w-3/4 ">
-              I&apos;m a Software Engineer <span className="text-accent-300">&</span>{" "}
-              Backend Developer.
+              I&apos;m a Software Engineer{" "}
+              <span className="text-accent-300">&</span> Backend Developer.
             </p>
             <p className="md:text-xl text-gray-300 z-10 ">
               I solve problems. Code just happens to be my method.
@@ -57,7 +57,10 @@ export default function Home() {
                 <IoLogoGithub className="text-2xl " />
               </button>
             </a>
-            <a href="https://www.linkedin.com/in/jhonatademuner/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/jhonatademuner/"
+              target="_blank"
+            >
               <button className="btn btn-circle btn-outline border-text-100 text-text-100 hover:bg-text-100 hover:scale-110 transition-colors duration-300">
                 <IoLogoLinkedin className="text-2xl " />
               </button>
@@ -86,8 +89,8 @@ export default function Home() {
               <h3 className="text-2xl  text-background-500">Experience</h3>
               <div className="w-full h-0.5 bg-background-600 bg-opacity-50"></div>
             </div>
-            <div className=" bg-accent-400 w-[48rem] h-24 blur-[12rem] opacity-50 absolute"></div>
-            <ExperienceTabs />  
+            <div className=" bg-accent-400 w-4/5 h-24 blur-[12rem] opacity-50 absolute"></div>
+            <ExperienceTabs />
           </section>
         </div>
         <div className="flex flex-col w-full items-center gap-16">
@@ -102,7 +105,7 @@ export default function Home() {
               </h3>
               <div className="w-full h-0.5 bg-background-600 bg-opacity-50"></div>
             </div>
-            <div className=" bg-accent-400 w-[48rem] h-24 blur-[12rem] opacity-50 absolute"></div>
+            <div className=" bg-accent-400 w-4/5 h-24 blur-[12rem] opacity-50 absolute"></div>
             <div className=" grid md:grid-rows-3 md:grid-cols-3 grid-cols-1 w-full gap-4 z-10">
               <TechCard
                 name="Java"
@@ -173,7 +176,7 @@ export default function Home() {
               </h3>
               <div className="w-full h-0.5 bg-background-600 bg-opacity-50"></div>
             </div>
-            <div className=" bg-accent-400 w-[48rem] h-3/5 blur-[24rem] opacity-30 absolute"></div>
+            <div className=" bg-accent-400 w-4/5 h-3/5 blur-[24rem] opacity-30 absolute"></div>
             <div className=" grid md:grid-rows-2 md:grid-cols-2 grid-cols-1 px-4 w-full gap-4 lg:w-[56rem] md:w-[48rem] sm:w-[40rem] z-10">
               <ProjectCard
                 name="StudAI"
@@ -234,7 +237,7 @@ export default function Home() {
           </section>
         </div>
         <section className="flex relative items-end lg:w-[56rem] md:w-[48rem] sm:w-[40rem] w-full px-2">
-          <div className=" bg-accent-400 w-[48rem] h-3/5 blur-[12rem] opacity-30 absolute"></div>
+          <div className=" bg-accent-400 w-4/5 h-3/5 blur-[12rem] opacity-30 absolute"></div>
           <FooterCardSpotlightEffect>
             <footer className="flex flex-col items-center justify-between w-full min-h-48 border-t-2 border-l-2 border-r-2 border-background-800 rounded-t-2xl bg-background-900 p-4 gap-8">
               <div className="flex justify-between w-full">
@@ -243,19 +246,30 @@ export default function Home() {
                     Jhonata Demuner.
                   </p>
                   <div className="flex gap-2 items-center text-2xl text-background-700 flex-wrap">
-                    <button className="btn btn-circle btn-outline border-background-600 text-background-600 hover:bg-background-600 hover:border-background-600 hover:scale-110 transition-colors duration-300">
-                      <IoLogoGithub className="text-2xl " />
-                    </button>
-                    <button className="btn btn-circle btn-outline border-background-600 text-background-600 hover:bg-background-600 hover:border-background-600 hover:scale-110 transition-colors duration-300">
-                      <IoLogoLinkedin className="text-2xl " />
-                    </button>
-                    <button className="btn btn-circle btn-outline border-background-600 text-background-600 hover:bg-background-600 hover:border-background-600 hover:scale-110 transition-colors duration-300">
-                      <IoMailSharp className="text-2xl " />
-                    </button>
-                    <button className="btn rounded-full btn-outline text-lg font-medium border-background-600 text-text-950 bg-background-600 hover:bg-transparent hover:text-background-600 hover:border-background-600 hover:scale-110 transition-colors duration-300">
-                      <LuDownload className="text-2xl " />
-                      Download CV
-                    </button>
+                    <a href="https://github.com/jhonatademuner" target="_blank">
+                      <button className="btn btn-circle btn-outline border-background-600 text-background-600 hover:bg-background-600 hover:border-background-600 hover:scale-110 transition-colors duration-300">
+                        <IoLogoGithub className="text-2xl " />
+                      </button>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/jhonatademuner/"
+                      target="_blank"
+                    >
+                      <button className="btn btn-circle btn-outline border-background-600 text-background-600 hover:bg-background-600 hover:border-background-600 hover:scale-110 transition-colors duration-300">
+                        <IoLogoLinkedin className="text-2xl " />
+                      </button>
+                    </a>
+                    <a href="mailto:jhonata.demuner@gmail.com" target="_blank">
+                      <button className="btn btn-circle btn-outline border-background-600 text-background-600 hover:bg-background-600 hover:border-background-600 hover:scale-110 transition-colors duration-300">
+                        <IoMailSharp className="text-2xl " />
+                      </button>
+                    </a>
+                    <a href="/jhonata_cv_en.pdf" target="_blank">
+                      <button className="btn rounded-full btn-outline text-lg font-medium border-background-600 text-text-950 bg-background-600 hover:bg-transparent hover:text-background-600 hover:border-background-600 hover:scale-110 transition-colors duration-300">
+                        <LuDownload className="text-2xl " />
+                        Download CV
+                      </button>
+                    </a>
                   </div>
                 </div>
                 <nav className="flex flex-col gap-2 text-xl text-background-500 items-end font-medium underline">
@@ -267,7 +281,7 @@ export default function Home() {
                   </a>
                   <a
                     href="#techStack"
-                    className="hover:scale-110 hover:text-text-200"
+                    className="hover:scale-110 hover:text-text-200 text-wrap"
                   >
                     Tech Stack
                   </a>

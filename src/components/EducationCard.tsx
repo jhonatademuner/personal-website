@@ -16,7 +16,7 @@ interface EducationCardProps {
 const EducationCard = ({education} : EducationCardProps) => {
   return (
     <div className="flex gap-4 w-full">
-    <Image src={education.photo} width={64} height={64} alt="Company Logo" className="flex rounded-full w-16 h-16 object-cover border border-white p-1"/>
+    <Image src={education.photo} width={64} height={64} alt="Company Logo" className="flex rounded-full w-16 h-16 object-cover border-2 border-background-700 p-1"/>
     <div className="flex flex-col gap-2 w-full">
       <div className="flex justify-between items-center flex-wrap">
         <p className="md:text-xl text-lg font-bold">
