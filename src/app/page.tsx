@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { IoLogoGithub, IoLogoLinkedin, IoMailSharp } from "react-icons/io5";
 import { LuDownload } from "react-icons/lu";
-import Photo from "@/../public/photo.jpg";
+import Photo from "@/../public/photo-2.jpg";
 import Brazil from "@/../public/brazil-flag.png";
 import ExperienceTabs from "@/components/ExperienceTabs";
 import TechCard from "@/components/TechCard";
