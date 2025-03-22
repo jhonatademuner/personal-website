@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { IoLogoGithub, IoLogoLinkedin, IoMailSharp } from "react-icons/io5";
 import { LuDownload } from "react-icons/lu";
-import Photo from "@/../public/photo-2.jpg";
+import Photo from "@/../public/photo.jpg";
 import Brazil from "@/../public/brazil-flag.png";
 import ExperienceTabs from "@/components/ExperienceTabs";
 import TechCard from "@/components/TechCard";
 import ProjectCard from "@/components/ProjectCard";
 import StudaiPreview from "@/../public/studai-preview.png";
-import StudaiAssistantPreview from "@/../public/studai-assistant-preview.jpg";
+import DevOpsChallengePreview from "@/../public/devops-challenge-preview.jpg";
 import ClipboarPreview from "@/../public/clipboar-preview.png";
 import LocalifPreview from "@/../public/localif-preview.png";
 import { FooterCardSpotlightEffect } from "@/components/FooterCardSpotlightEffect";
@@ -120,22 +120,16 @@ export default function Home() {
                 iconBackgroundColor="#6db33f25"
               />
               <TechCard
-                name="PostgreSQL"
-                description="Relational Database"
-                icon="postgresql"
-                iconBackgroundColor="#33679125"
+                name="jUnit"
+                description="Testing Framework"
+                icon="junit"
+                iconBackgroundColor="#DC514A25"
               />
               <TechCard
-                name="MongoDB"
-                description="NoSQL Database"
-                icon="mongodb"
-                iconBackgroundColor="#47A24825"
-              />
-              <TechCard
-                name="ActiveMQ"
+                name="RabbitMQ"
                 description="Message Broker"
-                icon="activemq"
-                iconBackgroundColor="#e5003f25"
+                icon="rabbitmq"
+                iconBackgroundColor="#FF660025"
               />
               <TechCard
                 name="Redis"
@@ -144,10 +138,34 @@ export default function Home() {
                 iconBackgroundColor="#d82c2025"
               />
               <TechCard
+                name="PostgreSQL"
+                description="Relational Database"
+                icon="postgresql"
+                iconBackgroundColor="#33679125"
+              />
+              <TechCard
+                name="MongoDB"
+                description="Non-Relational Database"
+                icon="mongodb"
+                iconBackgroundColor="#47A24825"
+              />
+              <TechCard
+                name="Amazon AWS"
+                description="Cloud Provider"
+                icon="aws"
+                iconBackgroundColor="#f8982015"
+              />
+              <TechCard
                 name="Kotlin"
                 description="Programming Language"
                 icon="kotlin"
                 iconBackgroundColor="#7A6BFF25"
+              />
+              <TechCard
+                name="Go"
+                description="Programming Language"
+                icon="go"
+                iconBackgroundColor="#6AD7E525"
               />
               <TechCard
                 name="Docker"
@@ -156,10 +174,10 @@ export default function Home() {
                 iconBackgroundColor="#0db7ed25"
               />
               <TechCard
-                name="React"
-                description="JavaScript Library"
-                icon="react"
-                iconBackgroundColor="#61dafb25"
+                name="Grafana"
+                description="Monitoring & Visualization"
+                icon="grafana"
+                iconBackgroundColor="#FAC43425"
               />
             </div>
           </section>
@@ -180,32 +198,44 @@ export default function Home() {
             <div className=" grid md:grid-rows-2 md:grid-cols-2 grid-cols-1 px-4 w-full gap-4 lg:w-[56rem] md:w-[48rem] sm:w-[40rem] z-10">
               <ProjectCard
                 name="StudAI"
-                description="Quiz creator for YouTube videos using AI (powered by OpenAI)."
+                description="📝 Quiz creator for YouTube videos using AI (powered by OpenAI)."
                 logo={StudaiPreview}
                 skillsUsed={[
                   "java",
                   "spring",
+                  "junit",
                   "postgresql",
-                  "mongodb",
-                  "react",
-                  "nextjs",
-                  "typescript",
-                  "tailwind",
+                  "flyway",
+                  "docker",
+                  "sonarqube",
+                  "openai",
                 ]}
                 repoUrl="https://github.com/jhonatademuner/studai"
-                liveUrl="https://github.com/JP-76/studai-frontend"
+                liveUrl=""
               />
               <ProjectCard
-                name="StudAI Assistant"
-                description="Transcript Retrieval and AI-Driven Quiz Generator for YouTube Videos."
-                logo={StudaiAssistantPreview}
-                skillsUsed={["python", "fastapi", "openai"]}
-                repoUrl="https://github.com/kenzokomati/studai-assistant"
+                name="DevOps Challenge"
+                description="🚀 Scalable Spring Boot API with Full CI/CD Pipeline for Candidate Matching"
+                logo={DevOpsChallengePreview}
+                skillsUsed={[
+                  "java",
+                  "spring",
+                  "junit",
+                  "postgresql",
+                  "flyway",
+                  "aws",
+                  "aws-ec2",
+                  "aws-rds",
+                  "terraform",
+                  "docker",
+                  "sonarqube",
+                ]}
+                repoUrl="https://github.com/jhonatademuner/leds-devops"
                 liveUrl=""
               />
               <ProjectCard
                 name="Clipboar"
-                description="Networked Clipboard Sharing with Expiration and Security Features"
+                description="📋 Networked Clipboard Sharing with Expiration and Security Features"
                 logo={ClipboarPreview}
                 skillsUsed={[
                   "java",
@@ -220,7 +250,7 @@ export default function Home() {
               />
               <ProjectCard
                 name="Localif"
-                description="Campus-Specific Image Recognition and Navigation for IFES Serra"
+                description="📍 Campus-Specific Image Recognition and Navigation for IFES Serra"
                 logo={LocalifPreview}
                 skillsUsed={[
                   "kotlin",

@@ -13,15 +13,17 @@ const ExperienceTabs = () => {
 
   const workHistory = [
     {
-      title: "Software Engineer (Java)",
-      company: "Wine.com.br",
+      title: "Software Engineer",
+      company: "Wine",
       companyUrl: "https://www.wine.com.br/institucional/",
       period: "Oct 2023 - Present",
-      description: `Developed and maintained scalable software used by over 500,000 customers, ensuring high availability and performance.
-        Optimized existing software to enhance stability and efficiency, resulting in improved user experience and reduced response times.
-        Implemented emergency protocols for quick bug resolution during critical periods, such as Black Friday, ensuring system reliability and performance under high demand.
-        Utilized a variety of technologies including Java, Spring Boot, PostgreSQL, MySQL, Redis, and ActiveMQ to deliver robust e-commerce solutions.
-        Collaborated with cross-functional teams to identify and address software issues, contributing to continuous improvement and innovation in system architecture.`,
+      description: `Optimized a geolocation microservice by applying classification algorithms and caching, increasing accuracy by 95% and reducing costs by 50%.
+        Fixed security vulnerabilities identified in penetration tests, following best practices and eliminating 100% of the detected issues.
+        Implemented optimizations for high-volume data loads using ActiveMQ, applying parallelism to reduce processing time to less than 10% of the original duration.
+        Improved the performance of both new and legacy systems through caching with Redis, reducing latency.
+        Analyze and resolve production bugs using tools like Grafana and Kubernetes, including during high-demand periods such as Black Friday.
+        Develop and maintain various projects, including legacy code with Spring Framework (Java 7) and microservices with Spring Boot (Java 17 and 21).
+        Develop interfaces using Java Server Pages (JSP) and jQuery, consistently receiving praise for attention to interface and user experience (UI/UX).`,
       photo: WineLogo,
     },
   ];
@@ -30,9 +32,9 @@ const ExperienceTabs = () => {
     {
       title: "Bachelor's Degree in Information Systems",
       institution: "Instituto Federal do Espírito Santo - IFES",
-      period: "2022",
+      period: "2025",
       description:
-        "Currently on the 6th semester of the course, with a focus on software development and systems analysis.",
+        "Currently on the 7th semester of the course, with a focus on software development and systems analysis.",
       photo: IfLogo,
     },
     {
