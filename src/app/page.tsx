@@ -6,6 +6,8 @@ import Brazil from "@/../public/brazil-flag.png";
 import ExperienceTabs from "@/components/ExperienceTabs";
 import TechCard from "@/components/TechCard";
 import ProjectCard from "@/components/ProjectCard";
+import ArchiterPreview from "@/../public/architer-preview.png";
+import ReleaseGuardPreview from "@/../public/release-guard-preview.png";
 import StudaiPreview from "@/../public/studai-preview.png";
 import DevOpsChallengePreview from "@/../public/devops-challenge-preview.jpg";
 import ClipboarPreview from "@/../public/clipboar-preview.png";
@@ -114,6 +116,12 @@ export default function Home() {
                 iconBackgroundColor="#f8982025"
               />
               <TechCard
+                name="Kotlin"
+                description="Programming Language"
+                icon="kotlin"
+                iconBackgroundColor="#7A6BFF25"
+              />
+              <TechCard
                 name="Spring"
                 description="Java Framework"
                 icon="spring"
@@ -156,12 +164,6 @@ export default function Home() {
                 iconBackgroundColor="#f8982015"
               />
               <TechCard
-                name="Kotlin"
-                description="Programming Language"
-                icon="kotlin"
-                iconBackgroundColor="#7A6BFF25"
-              />
-              <TechCard
                 name="Go"
                 description="Programming Language"
                 icon="go"
@@ -196,6 +198,37 @@ export default function Home() {
             </div>
             <div className=" bg-accent-400 w-4/5 h-3/5 blur-[24rem] opacity-30 absolute"></div>
             <div className=" grid md:grid-rows-2 md:grid-cols-2 grid-cols-1 px-4 w-full gap-4 lg:w-[56rem] md:w-[48rem] sm:w-[40rem] z-10">
+            <ProjectCard
+                name="Architer"
+                description="🧠 System Design Interview Simulation Platform (powered by OpenAI)."
+                logo={ArchiterPreview}
+                skillsUsed={[
+                  "kotlin",
+                  "spring",
+                  "junit",
+                  "postgresql",
+                  "flyway",
+                  "docker",
+                  "openai",
+                ]}
+                repoUrl="https://github.com/jhonatademuner/architer"
+                liveUrl=""
+              />
+              <ProjectCard
+                name="Release Guard"
+                description="⚙️ Automated Release Policy Service for GitHub."
+                logo={ReleaseGuardPreview}
+                skillsUsed={[
+                  "java",
+                  "spring",
+                  "junit",
+                  "postgresql",
+                  "docker",
+                  "openai",
+                ]}
+                repoUrl="https://github.com/jhonatademuner/release-guard"
+                liveUrl=""
+              />
               <ProjectCard
                 name="StudAI"
                 description="📝 Quiz creator for YouTube videos using AI (powered by OpenAI)."
