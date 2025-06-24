@@ -224,7 +224,6 @@ export default function Home() {
                   "junit",
                   "postgresql",
                   "docker",
-                  "openai",
                 ]}
                 repoUrl="https://github.com/jhonatademuner/release-guard"
                 liveUrl=""
